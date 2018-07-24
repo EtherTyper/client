@@ -473,7 +473,7 @@ func (m *MsgEphemeralMetadata) String() string {
 }
 
 func (m MessagePlaintext) IsEphemeral() bool {
-	return m.EphemeralMetadata() != nil
+	return false
 }
 
 func (m MessagePlaintext) EphemeralMetadata() *MsgEphemeralMetadata {
@@ -492,7 +492,7 @@ func (m MessageUnboxedValid) HasPairwiseMacs() bool {
 }
 
 func (m MessageUnboxedValid) IsEphemeral() bool {
-	return m.EphemeralMetadata() != nil
+	return false
 }
 
 func (m MessageUnboxedValid) EphemeralMetadata() *MsgEphemeralMetadata {
